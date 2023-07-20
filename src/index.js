@@ -41,6 +41,8 @@ const Footer = () => (
     <a>Twitter</a>
     <a>Instagram</a>
     <a>Youtube</a>
+
+    
   </div>
 )
 //Footer
