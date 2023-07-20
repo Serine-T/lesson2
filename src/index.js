@@ -7,7 +7,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 
 const All =()=> (
   <div>
-    All 2
+    All master
   </div>
 )
 root.render(
