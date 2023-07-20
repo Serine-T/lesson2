@@ -1,17 +1,49 @@
-import React from 'react';
+import React, { createElement } from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
+import './index.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+const All = () => (
+    <>
+      <Header/>
+      <Main/>
+      <Footer/>
+    </>
+  )
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+const Header =() =>  (
+    <div className='header'>
+    <ul>
+      <li className='logo'></li>
+      <li>Home</li>
+      <li>Status</li>
+      <li>About us</li>
+      <li>Social medias</li>
+    </ul>
+    <hr />
+    </div>
+)
+const Main = () => (
+  <div className='main'>
+    <div className='banner'>
+      <img src='https://www.komododigital.co.uk/app/uploads/2021/05/React-1-1024x683.jpg' alt='banner' />
+    </div>
+    <div className='cards'>
+      <div className='card1'></div>
+      <div className='card2'></div>
+      <div className='card3'></div>
+    </div>
+  </div>
+)
+const Footer = () => (
+  <div className='footer'>
+    <a>Twitter</a>
+    <a>Instagram</a>
+    <a>Youtube</a>
+  </div>
+)
+//Footer
+root.render(
+  <All/>
+)
